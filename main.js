@@ -9,7 +9,7 @@ function kiemtra(){
     
     if ((email === 'Trương Văn Hào' && password === '18082008') || (email==='Hồ Lê Bảo Trân' && password==='01092008')) {
       // Chuyển hướng người dùng sang trang khác
-      window.location.assign('https://haof108.github.io/newyear95/lg.html', '_blank');
+      window.location.assign('https://haof108.github.io/newyear95/nn.html', '_blank');
       //lấy tên
       localStorage.setItem("name",email);
       localStorage.setItem("schoolit",school);
