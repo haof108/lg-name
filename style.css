@@ -286,6 +286,11 @@ button#close-btn:hover {
         width: 280px;
         padding: 2rem;
     }
-
+    #thong-bao{
+        width: 85vw;
+      }
+    #close-btn{
+      left:70%
+    }
 }
 /* ---------- */

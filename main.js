@@ -62,6 +62,10 @@ setTimeout(function() {
   if(ok===false){
   document.querySelector('#notification3').classList.add('show');
   console.log('Hello, world!');
+  var cm = document.querySelector("#text");
+  // document.querySelector('text').style.width = "96px";
+  cm.style.height ="81px";
+  cm.style.width="96%";
   ok=true; 
 }
 }, 5000);
