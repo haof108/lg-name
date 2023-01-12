@@ -86,4 +86,17 @@ function bell2(){
     iconElement.style.display = 'block';
     iconElementan.style.display= 'none';
 }
+// var ok = false;
+function startTimer() {
+  var time = 0;
+  setInterval(function() {
+    time++;
+    var minutes = Math.floor(time / 60);
+    if(minutes>0){
+    document.getElementById("time").style.left = '74%';
+    document.getElementById("time").innerHTML = minutes+' '+'phút trước';
+    }
+  }, 1000);
+}
+startTimer();
 
