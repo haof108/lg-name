@@ -305,7 +305,7 @@
                      
   <!-- <a href="https://icons8.com/icon/nY7Q73ERmlBS/notification">Notification icon by Icons8</a> -->
     
-        <div class="toggle" onclick="nhac()" ></div>
+        <div class="toggle" onclick="nhac(),messicon()" ></div>
         <div class="layer1">
             <div class='time' style="position: absolute;color: wheat; width: 100%;font-family:'Times New Roman', Times, serif;font-size: 23px;opacity: 0;
             transition: opacity 3s;transition-delay:1.5s;left: 2%;
@@ -610,12 +610,13 @@
              
            <h1 style="color: wheat;position: absolute; text-align: center; width: 100%;font-size: 5rem;top: 60px;">
                 2023</h1> 
-                <div style="background-color:white;background-color: white;
+                <div class='iconmes'style="background-color:white;background-color: white;
                 width: 22px;
                   height: 21px;
                  border-radius: 7px;
-
+                display:none;
                 position: absolute;
+                opacity: 0;
                 left: 5%;
                 top: 35%;
                  z-index: 1;">
@@ -640,17 +641,23 @@
                 color: black;
                 font-size: 14px;
                 height: 0px;
-                
                 transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
                 transform-origin: center center;
 
                  box-shadow: 0 2px 4px rgb(0 0 0 / 50%);">
-                <div>
-              
-                </div>
-                <p style="font-family: Helvetica;color: gray;left:14%;top:15%;position: absolute;    font-size: 10px;">MESSENGER</p>
-                <p id ="time" style="font-family: Helvetica;color: gray;left:83%;top:14%;position: absolute;    font-size: 10px;">bây giờ</p>
-                  </div>
+                <p class='admin'style="font-family: Helvetica;color: gray;left:14%;top:15%;position: absolute;    font-size: 10px;display:none">MESSENGER</p>
+                <p id ="time" style="font-family: Helvetica;color: gray;left:83%;top:14%;position: absolute;    font-size: 10px;display:none;">bây giờ</p>
+                <p class='admin2'style="font-family: Helvetica;color: black;left: 4.5%;top: 38%;position: absolute;font-size: 15px;z-index: 1; font-weight: bold;display:none">Hào Trương</p>  
+                <p class='tinnhan'style="font-family: Helvetica;
+                color: gray;
+                width:100%;
+                height:100%;
+                left: 4.5%;
+                top: 60%;
+                position: absolute;
+                font-size: 15px;
+                z-index: 1;display:none">Đã gửi cho bạn 1 tin nhắn</p>
+            </div>
 
             <svg width="263" height="525" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <mask id="b" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="263" height="525">

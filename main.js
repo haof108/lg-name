@@ -67,10 +67,24 @@ setTimeout(function() {
   cm.style.height ="81px";
   cm.style.width="96%";
   ok=true; 
+  
+  startTimer();
 }
-}, 5000);
+}, 5000)
+}
+function messicon()
+{
+setTimeout(function() {
+  
+  document.querySelector('.admin').style.display = 'block';
+  document.querySelector('.admin2').style.display = 'block';
+   document.querySelector('.tinnhan').style.display='block';
+   document.querySelector('.tinnhan').style.color='black';
+document.querySelector("#time").style.display = 'block';
+   document.querySelector('.iconmes').style.display = 'block';
+  document.querySelector('.iconmes').style.opacity = '1';
 
-
+}, 5400)
 }
 function bell(){
     const iconElement = document.querySelector('#notification3');
@@ -85,6 +99,7 @@ function bell2(){
     const iconElementan = document.querySelector('#notification2');
     iconElement.style.display = 'block';
     iconElementan.style.display= 'none';
+    
 }
 // var ok = false;
 function startTimer() {
@@ -98,5 +113,5 @@ function startTimer() {
     }
   }, 1000);
 }
-startTimer();
+
 
