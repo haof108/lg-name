@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACHklEQVR4nO2YT0hVQRTGf7ZRWwVJUtEiC4qIoBbRIipCoXhY63oESRgEgRn9IdoI7aN9EQiiuA6C2rSJt7KW0R+w2qS2qoUpZBkHRvgYNNB37tz7YH5w4DFz5/vO3HfvzLkDmUwmk6koe4BrIXpoMS4Ci8ByCPt9gRbhELAgya/Er9BXSTqAIeBdlPQb4G3UZtfcCGMqwUngyyp33KIfOLdG31fgVNnJXwaWosTmgVfAHaAtxL3QNh9duwQMlJV8LUr+GzAIdP5nzGbgKjATTaJGYraEhFeSeA10rWN8VxizLJM3zWTcFvPpDZrbmGnRMc1kfBDjehM6ddF5TyK2RhtUexNa7dGesZ7HcMOcFsOGg15D9Ey7cPRvH3PQGxe9JOXGkBg+dNB7JHrXScADMbQNqlnui94ICRgTwysOeoOiN0oC9KXrddDrizbEwpkTw20Oet2iZyVGoeyMtn8vZkXXPArjkhi9cNR9mWopfS5GVi57cVd0n1EQJ4C/UgLvdj4A+BO0zeM4zthX1Q+5SxPeBsCk6JvXeS/hY8BvEZ8r6EXbBXwXH/M86r3uW/1+mOI4Anz23BcOitiC83O/Fj1RiX3Aa9ksK+pen45lxa1mJrAX+FRi8h/DEpuETcBPMT8jfWejJdKurSRPJVE7xHocQg+0nlBhdkSFWRxWAG6n4uxf5UDXYgrYR4vQFg59bwLDoY6ytkwmk8lQKf4BC/40+VovzoMAAAAASUVORK5CYII="> -->
     <style>
         html,
@@ -594,7 +595,7 @@
            </div> 
            
              <div class='school2' style="position: absolute;color: wheat; width: 100%;font-family:'Times New Roman', Times, serif; font-size: 23px; height: 18.18px; top: 28%;
-             right: -2%;  ">
+             right: 0%;text-align: center;  ">
                 <script>
                     document.querySelector('.school2').innerHTML = school;
             
@@ -658,7 +659,119 @@
                 font-size: 15px;
                 z-index: 1;display:none">Đã gửi cho bạn 1 tin nhắn</p>
             </div>
+            <div style="background-color: white;width:100%;height: 100%;position: relative;z-index:1 ;">
+                <div>
+                    
+                    </style>
+                    <div id ='campen'style="background-color: #e4e6eb;height: 30px;width:30px;position: absolute;border-radius: 40px;top: 5%;
+                    left: 6%;">
+                                <img style ="width: 30px;
+                                height: 30px;
+                                position: absolute;
+                                border-radius: 40px;"src="https://scontent.fdad1-3.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=7206a8&_nc_ohc=fZXttmBxezQAX-rDW2O&_nc_ht=scontent.fdad1-3.fna&oh=00_AfBklN9dE3NzDWDGSEnXZxJynogu2VQh-k2mjsaYaeUJZw&oe=63E85538">
+                    </div>
+                    <div style="font-family: helvetica;font-weight: bold;color: #000;font-size: 20px;width: 105px;position: absolute;top:5.7%;left: 20%;">Đoạn chat</div>
+                    <div id = "campen" style="height: 30px;width:30px;position: absolute;border-radius: 40px;top: 5%;
+                    left: 70%;display: flex;
+  align-items: center;
+  justify-content: center;">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACFklEQVR4nO2XTUsVURjHf75sc2FomVSi+A1apBRcShFC1+omRBA1F7UyEK2oVi7sE0jhpoXmIj+D15aZLVKCcOcn8GUxTpx4Bg6He3POc+c6E50f/OFy53nO8/xnzpxzBgKBQCAQCPyhFXgHHAIREDuK5NqKxBaKduBnhaar6QBoo0B89Gg+kckpBHeAc4UBk2NyL42rwBgwDzwXLQNHiuYTHckYyXjzUiPTd6QZeAsc19Cor46B10BTrc03AhuX2HjsaF16UDOXY/OxaFbbfIOs25rHvyGFh0Xm9yflNPylNdCrKLYKdPxlzBvAe8W4PRoD9z0KmF12ymPs6Sq7dVxF9zQGSh4FFpzc28AbYEtkVpRbTsySx/ilehr46qwUk8BphbgTYMKKM0vktyIYGLVyHl0wNcy1ISt+LG8D5k5fsXK+p8gxdz2hBTjL08APK77bY053WXkHeRrYtuL7PQz0WXnlPA3s/+tP4NR5B/ZS5OwW6R2IZSVJGEqxCg1a8eMpa9TVwK6zD0zImu/GmXPQY2cf2CuCAaNFJ9fsuq+Az6KXwE0n5oXH+HU3EMn5Ji0znp+hJY2BPo8CiT7IibMancCaYty7GgMdyo91M9c3gSfAiGhO/tN8D5wD11HyRVEwa5WpgQHPc3vWioAH1MiznExEwFMy4iGwo3wnNHO+nMWdr8Q1ObQN1En9UiMQCAQCgf+D36EM7dighzwWAAAAAElFTkSuQmCC" style="width: 20px;
+                        height: 20px;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        position: absolute;">
+                    </div>
+                    <div  id = 'campen' style="height: 30px;width:30px;position: absolute;border-radius: 40px;top: 5%;
+                    left: 87%;display: flex;
+                    align-items: center;
+                    justify-content: center;">
+                   <img src="data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0ibTQ2LjI0MiAxMC4yNDUtNC40NjcgNC40NjctOC42MTYtOC4zNTIgNC41OTktNC41OTlhNS45OTkgNS45OTkgMCAxIDEgOC40ODQgOC40ODR6bS03LjA4MyA3LjA4TDExLjY5NCA0NC43OSAwIDQ4LjA0OGwzLjIwNy0xMS43MzlMMzAuNTcgOC45NDZsOC41ODkgOC4zNzl6Ii8+PC9zdmc+" style="width: 13px;
+                   height: 13px;
+                   left: 50%;
+                   top: 50%;
+                   transform: translate(-50%, -50%);
+                   
+                   position: absolute;">
+                   <style>
 
+                        #campen{
+                            background-color: #e4e6eb;
+                        }
+                        #campen:hover{
+                            cursor: pointer;
+                         background-color: #c8cacf  ;
+                        }
+                    </style>
+                
+                </div>
+                </div>
+                    <div style="width:90%;height:25px  ;  border: none;
+                outline: none;
+                background-color:#F0F2F5;
+                border-radius: 100px;
+                position: absolute;
+                width:90%;height:32px;top:50%; margin-left: auto;
+                margin-right: auto;
+                position: absolute;  left: 50%; top: 17%;transform: translate(-50%, -50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;">
+
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABsElEQVR4nMVVS04CQRBtEnUj5xA2Ri8hxBtI/MUNJhOoqq4aRFezMi5MJMG48oPeQQPHM69nTIgyAwMhvs2kp6rr1b+d+0dUOh2tC9k5s/WZ7Q7f9NyrQb60ZeZ4n1mfhGzCpJ9M9iykA3xxxn9hffQdv1faaxE9FraxkI2I9MDMtqcVoiiqSjduQA49Zm0tHE0wDu/IfLvd3izShdyTWYgyJZmflsxz70rAkxmTjuelq5LlfJQkyUYZgiRJtjzrO2qSm6qsWybIuVsCzNrEfVXdyVHwZ+iO3wVdFFGUVHHfU3wym6Drb9CCbgUI2SvmZKbQs9161ofVCHQAO3nCa3iwEgHrG+wU1gBDtGwNhO2LyOfUgHu1MGDduLFiF9XzdCroY8zBvAnOmwMmG7oiYBLDRJJZoWLeJPv+rpsH7BSEikvwrEgXchGN011k925BYGW0sJNC2KxNFPDPUKU5/4DnMB7qJ9ZelCSkK6vJBN0hrC/oc7RyOId3woY/aYHx0iSIBrtFunYqpFd40dDnWAezumVZklLwZBdpTeJLty5IFoknO1obCYwz2+HaCKbxDbMeBLl2FqWwAAAAAElFTkSuQmCC" style="opacity: .8;
+                color: gray;font-size: 22px;left:6%;position: absolute;width:13px;">
+                <p style="font-family: Helvetica;color: gray;font-size: 14px;
+                left: 15%;
+                position: absolute;">Tìm kiếm </p>
+                </div>
+                <div style="width:100%;height: 25px;position: absolute;top: 27%;height: 50px;">
+                <div style="width: 47px;
+                height: 47px;
+                border-radius: 27px;
+                background-color: #e4e6eb;
+                display: flex;
+                left: 4%;
+                top: -47%;
+                align-items: center;
+                justify-content: center;
+                position: absolute;">
+                <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACfklEQVR4nO2ZzWoUURCFv0yyMAvFxI0ms/HnEdRkqS50JYKEoL5IjG7VoAt1MEGN+whqRJ2l+BCGeQD/Fkp+jCsTN1eunIGmmTC3em53z0gfODBMbtU91VNddW8FKlSoEAM1YBq4AawCLWAL+CNu6btXwDwwJZvSUQcWgG+AM/IrcAeYLEP4IeAxsJtBeJo7wBIwXpT4K8BGBOFprgOzeQof0VN3OXNRe0XFKNAsQLwT32nPKBgGXhco3onNWL9EEWnj9uCjGC+sK5kzWcWPqzKUHcCGyvZApY7rNZXqkZpULO5YO/aCwflP4Km4ncN6J962lM3Qs40XczRhe6yLKOt6l+Dn0APgtOGpPOlgvxxxvUvxdEgANw0OfRqk8SziepfiXEgAq8b892nQxvGAFLKsdym+DAmgZXDoJGBZ3M5hvUtwLSSATaPTIrkeEkA/1X/XoR/8/wFsDnoKtfpAqOvlJbaU0aL5IiSA+UBnb4HDwHnVd6sYPys6B4zpChmtkU0FOruYsDllrOk+4JMJ+0uBdkmbPVHT0KmbMz9lG0rYnQA+BNi9VwduY0i+oh3m0MQs5IncTwXhP5/V+cYXg19iS533TIf1DwL3uoUBk6q5IY5XgP3YcQB4HrjHb2DCusGSIac/AVd1l+gGv+aaUsIFspHhAf27SFsv9T6Qu8AFXUv3iXV9d88o3AE/VKkyYda4WR68TI9YLFH8QyJguKTu3Iw55B01dMsYfBNzuNvGiAZMeYtvBFazzJhRZYgt/HuMFzYUY/o1QptdtybVAA5SAiY0MfuSQbjvB/54cIQ+QE1Dp+safazpZrcr+s8f9bc5nV774t+sFSow4PgLcPl7yoA6gmsAAAAASUVORK5CYII=" style="width: 20px;
+                height: 20px;
+                left: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);">
+                <footer style="margin-top: 74px;font-family: helvetica;font-size: 12px;">
+                    <p style="width: 66px;top: 110%;
+                    position: absolute;
+                    left: -1%;">Đặt trạng 
+                        </p>
+                    <p style="
+                    position: absolute;
+                    left: 24%;
+    top: 140%;">thái</p>
+                </footer>
+                </div>
+                <div id ='campen'style="background-color: #e4e6eb;height: 47px;width:47px;position: absolute;border-radius: 27px;top: -47%;
+                    left: 29%;">
+                                <img style ="width: 47px;
+                                height: 47px;
+                                position: absolute;
+                                border-radius: 27px;"src="https://scontent.fdad1-3.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=7206a8&_nc_ohc=fZXttmBxezQAX-rDW2O&_nc_ht=scontent.fdad1-3.fna&oh=00_AfBklN9dE3NzDWDGSEnXZxJynogu2VQh-k2mjsaYaeUJZw&oe=63E85538">
+                    <footer style="margin-top: 74px;font-family: helvetica;font-size: 12px;">
+                        <p style="width: 66px;top: 110%;
+                        position: absolute;
+                        left: 26%;">Hào 
+                            </p>
+                        <p style="
+                        position: absolute;
+                        left: 8%;
+        top: 140%;">Trương</p>
+                    </footer>    
+                </div>
+                    
+                </div>
+            </div>
             <svg width="263" height="525" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <mask id="b" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="263" height="525">
                     <rect x="1.11384" y=".503279" width="261.446" height="523.847" rx="25.3166" fill="#1D1D1D"

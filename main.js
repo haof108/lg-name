@@ -113,5 +113,8 @@ function startTimer() {
     }
   }, 1000);
 }
-
+function icm(){
+  console.log('Hi');
+  document.getElementsByClassName('.campen').style.background ="#dadde1";
+}
 
