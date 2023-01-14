@@ -69,6 +69,7 @@ setTimeout(function() {
   ok=true; 
   
   startTimer();
+  date();
 }
 }, 5000)
 }
@@ -113,8 +114,15 @@ function startTimer() {
     }
   }, 1000);
 }
-function icm(){
-  console.log('Hi');
-  document.getElementsByClassName('.campen').style.background ="#dadde1";
+function date(){
+  var currentTime = new Date();
+var hourrs = currentTime.getUTCHours() + 7;
+var minutees = currentTime.getUTCMinutes();
+console.log(hourrs + ":" + minutees);
+  if(minutees<10){
+  document.getElementById("date").innerHTML = hourrs+":"+'0'+minutees;
 }
-
+  else{
+    document.getElementById("date").innerHTML = hourrs+":"+minutees;
+  }
+}
