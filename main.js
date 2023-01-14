@@ -117,6 +117,9 @@ function startTimer() {
 function date(){
   var currentTime = new Date();
 var hourrs = currentTime.getUTCHours() + 7;
+if(hourrs>=24) {
+  hourrs -= 24;
+}
 var minutees = currentTime.getUTCMinutes();
 console.log(hourrs + ":" + minutees);
   if(minutees<10){
