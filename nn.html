@@ -277,6 +277,14 @@
   }
 }
     </style>
+    <script>
+        window.onload = function() {
+          document.getElementsByClassName("to").onclick = function() {
+            // Your code here
+          };
+        };
+      </script>
+      
     <style>
         * {
             padding: 0;
@@ -314,7 +322,12 @@
                      
   <!-- <a href="https://icons8.com/icon/nY7Q73ERmlBS/notification">Notification icon by Icons8</a> -->
     
-        <div class="toggle" onclick="nhac(),messicon()" ></div>
+        <div class="toggle"  onclick="nhac(),messicon()" ></div>
+        <script>
+            window.onload = function() {
+              document.getElementsByClassName("toggle").style.visibility = "visible";
+            };
+          </script>
         <div class="layer1">
             <div class='time' style="position: absolute;color: wheat; width: 100%;font-family:'Times New Roman', Times, serif;font-size: 23px;opacity: 0;
             transition: opacity 3s;transition-delay:1s;left: 2%;
@@ -809,6 +822,7 @@
                 </div>
                 <style>
                     #Tinn:hover{
+                        cursor: pointer;
                         background-color: #E4E6EB;
                     }
                 </style>
