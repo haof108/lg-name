@@ -129,3 +129,7 @@ console.log(hourrs + ":" + minutees);
     document.getElementById("date").innerHTML = hourrs+":"+minutees;
   }
 }
+function messhome(){
+  document.getElementById("messhome").style.display ="block";
+
+}
