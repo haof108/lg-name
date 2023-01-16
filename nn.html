@@ -268,7 +268,23 @@
                 background-position: 0% 50%;
             }
         }
+        @keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
     </style>
+    <script>
+        window.onload = function() {
+          document.getElementsByClassName("to").onclick = function() {
+            // Your code here
+          };
+        };
+      </script>
+      
     <style>
         * {
             padding: 0;
@@ -306,10 +322,15 @@
                      
   <!-- <a href="https://icons8.com/icon/nY7Q73ERmlBS/notification">Notification icon by Icons8</a> -->
     
-        <div class="toggle" onclick="nhac(),messicon()" ></div>
+        <div class="toggle"  onclick="nhac(),messicon()" ></div>
+        <script>
+            window.onload = function() {
+              document.getElementsByClassName("toggle").style.visibility = "visible";
+            };
+          </script>
         <div class="layer1">
             <div class='time' style="position: absolute;color: wheat; width: 100%;font-family:'Times New Roman', Times, serif;font-size: 23px;opacity: 0;
-            transition: opacity 3s;transition-delay:1.5s;left: 2%;
+            transition: opacity 3s;transition-delay:1s;left: 2%;
     top: 2%;">
             23:59
             </div>
@@ -323,7 +344,7 @@
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACHklEQVR4nO2YT0hVQRTGf7ZRWwVJUtEiC4qIoBbRIipCoXhY63oESRgEgRn9IdoI7aN9EQiiuA6C2rSJt7KW0R+w2qS2qoUpZBkHRvgYNNB37tz7YH5w4DFz5/vO3HfvzLkDmUwmk6koe4BrIXpoMS4Ci8ByCPt9gRbhELAgya/Er9BXSTqAIeBdlPQb4G3UZtfcCGMqwUngyyp33KIfOLdG31fgVNnJXwaWosTmgVfAHaAtxL3QNh9duwQMlJV8LUr+GzAIdP5nzGbgKjATTaJGYraEhFeSeA10rWN8VxizLJM3zWTcFvPpDZrbmGnRMc1kfBDjehM6ddF5TyK2RhtUexNa7dGesZ7HcMOcFsOGg15D9Ey7cPRvH3PQGxe9JOXGkBg+dNB7JHrXScADMbQNqlnui94ICRgTwysOeoOiN0oC9KXrddDrizbEwpkTw20Oet2iZyVGoeyMtn8vZkXXPArjkhi9cNR9mWopfS5GVi57cVd0n1EQJ4C/UgLvdj4A+BO0zeM4zthX1Q+5SxPeBsCk6JvXeS/hY8BvEZ8r6EXbBXwXH/M86r3uW/1+mOI4Anz23BcOitiC83O/Fj1RiX3Aa9ksK+pen45lxa1mJrAX+FRi8h/DEpuETcBPMT8jfWejJdKurSRPJVE7xHocQg+0nlBhdkSFWRxWAG6n4uxf5UDXYgrYR4vQFg59bwLDoY6ytkwmk8lQKf4BC/40+VovzoMAAAAASUVORK5CYII=" style="position: absolute;width: 39px;">
             </div>
               <div class='school' style="position: absolute;color: wheat; width: 100%;font-family:'Times New Roman', Times, serif;font-size: 23px;opacity: 0;
-              transition: opacity 3s;transition-delay:1.5s;
+              transition: opacity 3s;transition-delay:1.0s;
               top: 28%;
               right: -18%;  ">
                 <script>
@@ -624,7 +645,7 @@
                 <img src="data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxkZWZzPjxyYWRpYWxHcmFkaWVudCBpZD0iYSIgY3g9IjE5LjI0NyUiIGN5PSI5OS40NjUlIiByPSIxMDguOTYlIiBmeD0iMTkuMjQ3JSIgZnk9Ijk5LjQ2NSUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwOUYiLz48c3RvcCBvZmZzZXQ9IjYwLjk3NSUiIHN0b3AtY29sb3I9IiNBMDMzRkYiLz48c3RvcCBvZmZzZXQ9IjkzLjQ4MiUiIHN0b3AtY29sb3I9IiNGRjUyODAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNGRjcwNjEiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIGZpbGw9IiNGRkYiIGZpbGwtb3BhY2l0eT0iMCIvPjxwYXRoIGZpbGw9InVybCgjYSkiIGQ9Ik01MTIsMTIyIEMyODYuNjY4LDEyMiAxMTIsMjg3LjA1NiAxMTIsNTEwIEMxMTIsNjI2LjYxNDQgMTU5Ljc5Miw3MjcuMzgyNCAyMzcuNjIyNCw3OTYuOTg0IEMyNDQuMTU2LDgwMi44MzIgMjQ4LjEsODExLjAyNCAyNDguMzY4LDgxOS43OTIgTDI1MC41NDY0LDg5MC45NDQgQzI1MS4yNDI0LDkxMy42NCAyNzQuNjg1Niw5MjguNDA4IDI5NS40NTM2LDkxOS4yNCBMMzc0Ljg0OCw4ODQuMTkyIEMzODEuNTc4NCw4ODEuMjI0IDM4OS4xMiw4ODAuNjcyIDM5Ni4yMTIsODgyLjYyNCBDNDMyLjY5Niw4OTIuNjU2IDQ3MS41MjY0LDg5OCA1MTIsODk4IEM3MzcuMzMyLDg5OCA5MTIsNzMyLjk0NCA5MTIsNTEwIEM5MTIsMjg3LjA1NiA3MzcuMzMyLDEyMiA1MTIsMTIyIFoiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMjcxLjgwMTYsNjIzLjQ2ODggTDM4OS4zMDE2LDQzNy4wNTI4IEM0MDcuOTkyLDQwNy4zOTY4IDQ0OC4wMTYsNDAwLjAxMjggNDc2LjA2LDQyMS4wNDQ4IEw1NjkuNTEzNiw0OTEuMTM1MiBDNTc4LjA4OCw0OTcuNTY3MiA1ODkuODg1Niw0OTcuNTMyOCA1OTguNDI0LDQ5MS4wNTI4IEw3MjQuNjM3NiwzOTUuMjY0OCBDNzQxLjQ4NCwzODIuNDgwOCA3NjMuNDczNiw0MDIuNjQwOCA3NTIuMiw0MjAuNTMxMiBMNjM0LjcsNjA2Ljk0ODggQzYxNi4wMDgsNjM2LjYwMzIgNTc1Ljk4NCw2NDMuOTg4OCA1NDcuOTQxNiw2MjIuOTU1MiBMNDU0LjQ4NTYsNTUyLjg2MzIgQzQ0NS45MTIsNTQ2LjQzMjggNDM0LjExMzYsNTQ2LjQ2NzIgNDI1LjU3Niw1NTIuOTQ3MiBMMjk5LjM2MTYsNjQ4LjczNTIgQzI4Mi41MTYsNjYxLjUxODQgMjYwLjUyNTYsNjQxLjM1ODQgMjcxLjgwMTYsNjIzLjQ2ODggWiIvPjwvZz48L3N2Zz4=" style="width: 50px;height:20px;position: absolute;left:-63%">  
                     
                 </div>
-                <div id="text" style="position: absolute;position: fixed;
+                <div id="text" onclick="messhome()" style="position: absolute;position: fixed;
                 margin: auto;
                 position: absolute;
                 border-radius: 10px;
@@ -644,8 +665,18 @@
                 height: 0px;
                 transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
                 transform-origin: center center;
-
+                
                  box-shadow: 0 2px 4px rgb(0 0 0 / 50%);">
+                 <style>
+                    #text:hover{
+                        cursor: pointer;
+                    }
+                    #messhome{
+                        animation: appear 0.1s ease-in-out;
+                        animation-fill-mode: forwards;
+                        transform: scale(0);
+                    }
+                 </style>
                 <p class='admin'style="font-family: Helvetica;color: gray;left:14%;top:15%;position: absolute;    font-size: 10px;display:none">MESSENGER</p>
                 <p id ="time" style="font-family: Helvetica;color: gray;left:83%;top:14%;position: absolute;    font-size: 10px;display:none;">bây giờ</p>
                 <p class='admin2'style="font-family: Helvetica;color: black;left: 4.5%;top: 38%;position: absolute;font-size: 15px;z-index: 1; font-weight: bold;display:none">Hào Trương</p>  
@@ -659,7 +690,7 @@
                 font-size: 15px;
                 z-index: 1;display:none">Đã gửi cho bạn 1 tin nhắn</p>
             </div>
-            <div style="background-color: white;width:100%;height: 100%;position: relative;z-index:1 ;">
+            <div id ="messhome"style="background-color: white;width:100%;height: 100%;position: relative;z-index:1 ;display: none;">
                 <div>
                     
                     </style>
@@ -791,6 +822,7 @@
                 </div>
                 <style>
                     #Tinn:hover{
+                        cursor: pointer;
                         background-color: #E4E6EB;
                     }
                 </style>
@@ -936,6 +968,53 @@
                     color: hsl(223deg 6% 63%);">Tin</p>
             </div>
             </div>
+            </div>
+            <div style="background-color: white;width:100%;height: 100%;position: relative;z-index:1 ;display: block;">
+                    <div class ="navi" style="height: 50px;
+                    width: 100%;
+                    position: relative;
+                    box-shadow: 0 -3px 8px;">
+                        <div style="width: 40px;
+                        position: absolute;
+                        height: 40px;
+                        top: 15.5%;
+                        border-radius: 39px;
+                        /* background: gray; */
+                        left: 2%;">
+                        <img style="width: 20px;
+                        position: absolute;
+                        height: 20px;
+                        top: 24%;
+                        left: 25%;"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNElEQVR4nO3YvS4EYRTG8ScbW6DQqVST7JxTbTOdRkuIQrgOLoCKSxA3QKInXAChpNYg8VUQnUYij+xki1nejY9I7Jk8v+Tt5593Zt4zA4iIiIiI/CnjPJx3MD7BuIiQcs7A+Aonu+sR4RgnYXypRBDGB4SSsw3jc0+E8w3GJYTRYgbj/YeIzm4sI4yM4zBeJCJWEUbGMRjPExGbCKPgCJzHnyKc2wAbCKFgE87DRMQepjiEGNiAcTcRcVLuUhjOrUTEoK+r8qCuRGwMwEX9dt1WQ9brERL31rpEzml862E3nqLNUYRSsAnjQSJmP9Drt2uCwzAeJbZxJ86B2DuinMUeUb4aGp1rCKfVZ4x3riCcvM+HlXMBNfnUvUZNfj7cICznXDmodSKcs/99OSIiIiIi+Il3HdORugHpO4gAAAAASUVORK5CYII=">
+
+                        </div>
+                        <div style="height: 100%;
+                        width: 140px;
+                        position: absolute;
+                        top: 3%;
+                        left: 14%;
+                    ">
+                            <div id ='campen'style="ackground-color: #e4e6eb;
+                            height: 30px;
+                            width: 30px;
+                            position: absolute;
+                            border-radius: 40px;
+                            top: 22%;
+                            left: 3%;">
+                                <img style ="width: 30px;
+                                height: 30px;
+                                position: absolute;
+                                border-radius: 40px;"src="https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/307753644_787835532361684_1015246349303009430_n.jpg?stp=dst-jpg_p100x100&_nc_cat=106&ccb=1-7&_nc_sid=7206a8&_nc_ohc=JVZtPs0EUaQAX-w8iC0&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-lax3-2.xx&oh=00_AfDeVjdFpZsHLjp46k1M7fkLUo5zDunKBhy083ivc4fl0A&oe=63C7A992">
+                    </div>
+                        <span style="    color: #050505;
+                        font-family: helvetica;
+                        font-size: 15px;
+                        position: absolute;
+                        top: 19%;
+                        left: 31%;">Hào Trương</span>
+                        <span style="color: #65676B;font-size: 13px;font-family: helvetica;position: absolute;top: 51%;left: 31%;">Đang hoạt động</span>
+                        </div>
+                    </div>
             </div>
             <svg width="263" height="525" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <mask id="b" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="263" height="525">
