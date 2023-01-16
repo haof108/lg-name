@@ -131,4 +131,16 @@ else{
 }
 function messhome(){
 document.getElementById("messhome").style.display ="block";
+document.querySelector(".toggle").style.zIndex ="0";
+// document.querySelector(".iconmes").style.zIndex ="0";
+}
+function dieuhuong(){
+  // document.querySelector(".toggle").style.zIndex ="1";
+  document.getElementById("messmain").style.display ="none";
+  document.getElementById("messhome").style.display ="block";
+  console.log("nhớ fix lại là 1 còn bên noti mes là 0");
+}
+function messmain(){
+  document.getElementById("messmain").style.display ="block";
+  console.log(1);
 }
