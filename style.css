@@ -289,6 +289,10 @@ button#close-btn:hover {
     #thong-bao{
         width: 85vw;
       }
+    .form-item-icon2{
+        position: absolute;
+        left: 86% !important;
+    }
     #close-btn{
       left:70%
     }

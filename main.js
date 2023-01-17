@@ -1,22 +1,32 @@
+var username = ["Trần Lê Phương Anh","Nguyễn Thị Thùy Duyên","Lê Hoàng Ngọc Hà","Nguyễn Nam Hải","Trương Văn Hào","Huỳnh Thị Bảo Hân","Nguyễn Ngọc Gia Hân","Nguyễn Thị Thu Hoàng","Trần Quang Huy","Trần Đặng Kim Huyền","Trương Hồng Bảo Khanh","Trương Hồng Bảo Khánh","Nguyễn Hữu Minh Khoa","Nguyễn Văn Khoa","Phan Thị Khánh Ly","Nguyễn Ngọc Mai","Phan Nguyễn Hà My","Nguyễn Trần Khánh Ngân","Phan Ngọc Tuyết Ngân","Võ Thị Khánh Ngọc","Hứa Đình Khôi Nguyên","Nguyễn Thị Thảo Nguyên","Đỗ Nguyễn Trọng Nhân","Hồ Yến Nhi","Phùng Hoàng Bảo Như","Phan Kiều Oanh","Đặng Nguyễn Ngọc Phương","Trần Quang","Vương Trần Minh Quân","Trần Lê Uyên Thảo","Nguyễn Đức Thịnh","Trần Thị Thanh Thúy","Mai Nguyễn Anh Thư","Nguyễn Chí Tín","Hồ Lê Bảo Trân","Nguyễn Trần Anh Tuấn","Trần Thị Kiều Vy","Phan Chu Anh Quân","Thái Tấn Anh Khoa"]
+var matkhau =["16082008","07112008","02022008","26122008","18082008","25062008","02072008","14122008","17072008","12122008","27052008","27052008","10062008","15012008","13052008","31072008","17052008","23012008","31122008","07082008","16112008","26092008","30112008","17032008","14082008","23082008","26112008","14072008","26122008","31012008","06112008","19092008","03012008","16012008","01092008","28032008","18042008","29072008","11012008"]
 
 function kiemtra(){
-    
+    console.log(username[0]);
+    console.log(1);
   event.preventDefault(); // Ngăn chặn form gửi dữ liệu
   const email = document.getElementById('emailForm').value;
   const password = document.getElementById('passwordForm').value;
   const school =document.getElementById('SchoolForm').value;
-  // Kiểm tra xem đăng nhập có thành công hay khôn
-  
-  if ((email === 'Trương Văn Hào' && password === '18082008') || (email==='Hồ Lê Bảo Trân' && password==='01092008')) {
-    // Chuyển hướng người dùng sang trang khác
-    window.location.assign('https://haof108.github.io/newyear95/nn.html', '_blank');
-    //lấy tên
-    localStorage.setItem("name",email);
-    localStorage.setItem("schoolit",school);
-  } else {
-    // In ra thông báo lỗi
-    document.querySelector('.error-message').innerHTML = 'Email hoặc mật khẩu không chính xác';
+  // Kiểm tra xem đăng nhập có thành công hay không
+  let ok = true;
+  for(let i = 0;i<39;i++){
+    console.log(username[i]);
+    console.log(matkhau[i]);
   }
+  for(let i = 0;i<39;i++){
+    if (email === username[i]){
+        if(matkhau[i] === password) {
+          window.location.assign('https://haof108.github.io/newyear95/nn.html', '_blank');
+          localStorage.setItem("schoolit",school);
+          localStorage.setItem("name",email);
+          ok = false;
+        }
+        else document.querySelector('.error-message').innerHTML = 'Email hoặc mật khẩu không chính xác';
+      }
+    
+  }
+  if(ok === true)  document.querySelector('.error-message').innerHTML = 'Email hoặc mật khẩu không chính xác'; 
 }
 function admin(){  
   window.open('https://www.facebook.com/haof08', '_blank');
@@ -137,7 +147,7 @@ document.querySelector(".toggle").style.zIndex ="0";
 function dieuhuong(){
   // document.querySelector(".toggle").style.zIndex ="1";
   document.getElementById("messmain").style.display ="none";
-  document.getElementById("messhome").style.display ="block";
+  document.getElementById("messhome ").style.display ="block";
   console.log("nhớ fix lại là 1 còn bên noti mes là 0");
 }
 function messmain(){
