@@ -38,7 +38,10 @@ body {
 }
 
 .login-card-logo img {
-    width: 60px;
+    position: absolute;
+    top: -9%;
+    left: 27%;
+    width: 215px;
 }
 /* ---------- */
 
@@ -295,6 +298,11 @@ button#close-btn:hover {
     }
     #close-btn{
       left:70%
+    }
+    .login-card-logo img {
+            top: -7%;
+            left: 24%;
+            width: 156px;
     }
 }
 /* ---------- */
