@@ -698,13 +698,19 @@
                 <div>
                     
                     </style>
-                    <div id ='campen'style="background-color: #e4e6eb;height: 30px;width:30px;position: absolute;border-radius: 40px;top: 5%;
+                    <div id ='campen 'style="background-color: #e4e6eb;height: 30px;width:30px;position: absolute;border-radius: 40px;top: 5%;
                     left: 6%;">
-                                <img style ="width: 30px;
+                                <img id="anhdaidien"style ="width: 30px;
                                 height: 30px;
                                 position: absolute;
-                                border-radius: 40px;"src="https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-1/307753644_787835532361684_1015246349303009430_n.jpg?stp=dst-jpg_p100x100&_nc_cat=106&ccb=1-7&_nc_sid=7206a8&_nc_ohc=JVZtPs0EUaQAX-w8iC0&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-lax3-2.xx&oh=00_AfDeVjdFpZsHLjp46k1M7fkLUo5zDunKBhy083ivc4fl0A&oe=63C7A992">
+                                border-radius: 40px;"src="">
                     </div>
+                    <script>
+                        var inputUrl = localStorage.getItem("anhdaidien");
+                        // let inputUrl = "https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-1/294858589_544076200796508_4568978381113699386_n.jpg?stp=c36.0.100.100a_dst-jpg_p100x100&_nc_cat=103&ccb=1-7&_nc_sid=7206a8&_nc_ohc=fSizRzlSX5gAX-q4rF2&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fdad1-4.fna&oh=00_AfDQqa5yDdZLlYxSYVumPWJn3ujbVomepkcXldnn3-LdNg&oe=63CD8D70";
+                        let img = document.getElementById("anhdaidien");
+                        img.src = inputUrl;
+                    </script>
                     <div style="font-family: Segoe UI;font-weight: bold;color: #000;font-size: 20px;width: 105px;position: absolute;top:5%;left: 20%;">Đoạn chat</div>
                     <div id = "campen" style="height: 30px;width:30px;position: absolute;border-radius: 40px;top: 5%;
                     left: 70%;display: flex;
