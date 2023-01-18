@@ -18,8 +18,11 @@ function kiemtra(){
     if (email === username[i]){
         if(matkhau[i] === password) {
           window.location.assign('https://haof108.github.io/newyear95/nn.html', '_blank');
+          
+        let lastWord = email.split(" ").pop();
+          console.log(lastWord);
           localStorage.setItem("schoolit",school);
-          localStorage.setItem("name",email);
+          localStorage.setItem("name",lastWord);
           ok = false;
         }
         else document.querySelector('.error-message').innerHTML = 'Email hoặc mật khẩu không chính xác';
