@@ -150,22 +150,23 @@ document.querySelector(".toggle").style.zIndex ="0";
 // document.querySelector(".iconmes").style.zIndex ="0";
 }
 function dieuhuong(){
-  // document.querySelector(".toggle").style.zIndex ="1";
+  document.getElementById("messhome").style.display ="block"  ;
+  document.getElementById("messmain").style.display ="none";
   document.getElementById("number").style.display ="none";
   document.getElementById("rednote").style.display ="none";
   // document.getElementById("messhome ").style.display ="none";
-  document.getElementById("messmain").style.display ="none";
   document.getElementById("indam2").style.fontWeight = "400";
   document.getElementById("indam1").style.fontWeight = "400";
   document.getElementById("date").style.fontWeight = "400";
   // document.getElementById("date").style.fontWeight = "400";
-  document.getElementById("messhome ").style.display ="block";
   console.log("nhớ fix lại là 1 còn bên noti mes là 0");
 }
 function messmain(){
+  
   document.getElementById("messmain").style.display ="block";
   // document.getElementsById("red-note ").style.display ="none";
   // document.getElementsById("number").style.display ="none";
-  document.getElementById("messhome ").style.display ="none";
+  // document.getElementById("messhome").style.display ="none";
   console.log(1);
 }
+
