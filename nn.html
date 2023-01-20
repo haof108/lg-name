@@ -1178,7 +1178,11 @@
                                         var school2= localStorage.getItem("schoolit");
                                         var name = localStorage.getItem("name");
                                         document.querySelector('.tinnhanchinh').innerHTML = "Dear" + " " + name+" ,"+ "vậy là 1 năm mới nữa lại đến chúc bạn năm mới dồi dào sức khỏe,niềm vui nhân đôi,hạnh phúc dồi dào,tiền vô như nước ra như cà phê phin,đặc biệt chúc bạn có thể đậu được" +" " +school2 +" "+ "theo chính ước nguyện của các bạn mặc dù lời chúc hơi công nghiệp tí nhưng cũng nó cũng tốn kha khá chất xám và sự đầu tư về việc chép code:)))"; 
-                        
+                                        window.addEventListener("load", function() {
+  let element1 = document.querySelector(".loichuc");
+  let element2 = document.querySelector(".tinnhanchinh");
+  element2.style.height = element1.offsetHeight + "px";
+});
 
                                      </script> 
                                 </div>
